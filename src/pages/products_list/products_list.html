@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      {{ category_title }}
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+    <ion-card ion-item *ngFor="let product of products">
+        <img [src]="getImageUrl(product)" alt="">
+        <ion-card-content>
+            <ion-card-title>{{ product.title }}</ion-card-title>
+            <div class="white-space-normal" [innerHTML]="sanContent(product)"></div>
+        </ion-card-content>
+    </ion-card>
+</ion-content>
