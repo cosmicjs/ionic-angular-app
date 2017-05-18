@@ -19,11 +19,11 @@ The installer will ask you some questions about installing node modules and ioni
 ![Ionic Angular Cosmic](https://cosmicjs.com/uploads/35c33fa0-3be4-11e7-bfc3-91ffe5d3362c-ionic-angular-cosmic.gif)
 
 ## Configure
-Go into config.ts and edit to point to your Bucket.
+Edit config.ts to point to your Bucket:
 ```
 export default {
-    bucket: {
-        slug: 'your-bucket-slug'
-    }
+  bucket: {
+    slug: 'ionic-angular-app'
+  }
 }
 ```
